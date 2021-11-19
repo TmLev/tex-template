@@ -1,0 +1,101 @@
+% ------------------------------------------------------------------------------
+% Languages, fonts, encodings.
+
+% Modern TeX compilers use UTF-8 encoding by default,
+% but not all of them :(
+\usepackage[utf8]{inputenc}
+
+% Default font encoding allows 7 bits per value, `T1` makes it 8 bits.
+% TL;DR: Try to always use it.
+\usepackage[T1,T2A]{fontenc}
+
+% Enable languages used in this project.
+\usepackage[russian,english]{babel}
+
+% Math fonts.
+\usepackage{amsfonts}
+
+% ------------------------------------------------------------------------------
+% Paper layout.
+
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in]{geometry}
+
+% ------------------------------------------------------------------------------
+% Text.
+
+% Align list with bullet widths.
+\usepackage{eqlist}
+
+% Colors.
+\usepackage{xcolor}
+
+% Half-quad.
+\newcommand{\hquad}{\hspace{0.5em}}
+
+% ------------------------------------------------------------------------------
+% Math.
+
+% Better `amsmath`.
+\usepackage{mathtools}
+
+% Math symbols.
+\usepackage{amssymb}
+
+% Theorems.
+\usepackage{amsthm}
+
+% Write text in math environment.
+\usepackage{amstext}
+
+% Matrices and tables.
+\usepackage{array}
+
+% Smart comma:
+% $0,2$  -- number
+% $0, 2$ -- enumeration
+\usepackage{icomma}
+
+% Diagonal frac, looks better in some scenarios.
+\usepackage{nicefrac}
+
+% ------------------------------------------------------------------------------
+% Links, URLs.
+
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    anchorcolor=blue
+    hyphens
+]{hyperref}
+
+% ------------------------------------------------------------------------------
+% Figures.
+
+% Place figures side-by-side.
+\usepackage{subfig}
+
+% ------------------------------------------------------------------------------
+% Images.
+
+% `graphicx` allows to include images.
+\usepackage{graphicx}
+\graphicspath{
+    {./images/}
+}
+
+% ------------------------------------------------------------------------------
+% Plots.
+
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+\usepgfplotslibrary{fillbetween}
+
+% ------------------------------------------------------------------------------
+% Code.
+
+\usepackage{listings}
