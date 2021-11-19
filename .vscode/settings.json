@@ -1,0 +1,7 @@
+{
+  "latex-workshop": {
+    "latex": {
+      "outDir": "../build",
+    },
+  },
+}
