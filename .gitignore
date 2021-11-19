@@ -1,0 +1,6 @@
+### Global ###
+## Directories
+build
+
+## Files
+.DS_Store
